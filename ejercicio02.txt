@@ -1,0 +1,68 @@
+Problema2
+
+1.Inicio
+2.funcion principal()
+3.eleccion, i[0-n]
+4.autos, x(60)[{a-z},{A-Z},{BS}]
+5.motos, x(60)[{a-z},{A-Z},{BS}]
+6.n, i[0-n]<--1
+7.terminar, x(20)[{a-z},{A-Z},{BS}]<--""
+
+8.Mientras n < 10 entonces
+9.	<<"Escriba:"+"\n"+"1 para ingresar autos"+"\n"+"2 para ingresar motos"
+10.	>>eleccion
+
+11.	Si (eleccion == 1) entonces 
+12.		autos<--ingresarAutos()
+13.		<<autos
+14.	De lo contrario
+15.		Si (eleccion == 2) entonces 
+16.			motos<--ingresarMotos()
+17.			<<motos
+18.		De lo contrario
+19.			<<"valor erroneo"
+20.		Fin Si
+23.	Fin Si
+	
+24.	<<"Si desea terminar el proceso, ingrese si"
+25.	>> terminar
+
+26.	Si (terminar == "si") entonces
+27.		n<--10
+	
+28.Fin Mientras
+
+29.fin funcion principal
+
+30.funcion ingresarAutos():x
+31.	marca, x(20)[{a-z},{A-Z},{BS}]
+32.	año, i[0-n]
+33.	cadena, x(20)[{a-z},{A-Z},{BS}]<--""
+	
+34.	<<"Ingrese la marca de auto"
+35.	>>marca
+
+36.	<<"Ingrese el año de fabricacion del auto"
+37.	>>auto
+
+38.	cadena<--cadena+"Auto marca"+marca+"con año de fabricación"+año+"."
+39.	retorna cadena
+
+40.fin funcion ingresarAutos
+
+41.funcion ingresarMotos():x
+42.	motor, x(20)[{a-z},{A-Z},{BS}]
+43.	asientos, i[0-n]
+44.	cadena, x(20)[{a-z},{A-Z},{BS}]<--""
+	
+45.	<<"Ingrese el tipo de motor de la moto"
+46.	>>motor
+
+47.	<<"Ingrese el número de asientos de la moto"
+48.	>>asientos
+
+49.	cadena<--cadena+"Moto con motor a"+motor+"y "+asientos+"asientos."
+50.	retorna cadena
+
+51.fin funcion ingresarMotos
+52.Fin

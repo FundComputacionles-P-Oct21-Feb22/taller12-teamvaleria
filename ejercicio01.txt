@@ -1,2 +1,23 @@
-//Prueba git pull
-<<"Hola mundo"
+Problema1
+
+1.Inicio
+2. funcion principal()
+3. arreglo1(4), i[0-n] <-- {1, 2, 5, 6}
+4. arreglo2(4), i[0-n] <-- {9, 8, 7, 1}
+5. arreglo3(4), i[0-n] <-- {10, 18, 17, 10}
+6. indice, i[0-n]
+
+7. Para(indice<--0, indice<5, 1) haga
+8.	generarOperacion(arreglo1[indice], arreglo2[indice], arreglo3[indice])
+9. Fin Para
+
+10. fin funcion principal
+
+11. funcion generarOperacion(num1,i; num2,i; num3,i)
+12.	cadena, x(60)[{a-z},{A-Z},{BS}]<--""
+13.	m, d[0-n]
+14.	m<--(a**2 + b ** 2) + a*c
+15.	cadena<--cadena+"El valor de m es "+m+"y los valores usados par la operación son: "+num1+","+num2+","+num3
+16.	<<cadena
+17. fin funcion generarOperacion
+18.Fin
